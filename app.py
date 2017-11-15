@@ -1,10 +1,6 @@
 import os
 from flask import Flask
 
-print(os.environ['APP_SETTINGS'])
-print('Hi')
-print('wow')
-
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
